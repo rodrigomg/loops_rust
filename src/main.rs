@@ -3,6 +3,7 @@ fn main() {
    while_sample();
    while_with_collections();
    for_better_for_collection();
+   for_rev_sample();
 }
 
 //fn loop_sample() {
@@ -38,4 +39,11 @@ fn for_better_for_collection() {
     for element in a.iter() {
         println!("the value is: {}", element);
     }
+}
+
+fn for_rev_sample() {
+    for number in (1..4).rev() {
+        println!("{}!!", number);
+    }
+        println!("LIFTOFF!!");
 }
