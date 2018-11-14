@@ -1,14 +1,15 @@
 fn main() {
    //loop_sample();
    while_sample();
+   while_with_collections();
 }
 
-fn loop_sample() {
-    loop {
-        println!("again!!");
-    }
-}
-
+//fn loop_sample() {
+//    loop {
+//        println!("again!!");
+//    }
+//}
+//
 fn while_sample() {
     let mut number = 5;
 
@@ -18,4 +19,15 @@ fn while_sample() {
     }
 
     println!("LIFTOFF!!!");
+}
+
+fn while_with_collections() {
+    let a = [50,40,30,20,10];
+    let mut index = 0;
+
+    while index < 5 {
+        println!("the value is: {}", a[index]);
+
+        index = index + 1;
+    }
 }
